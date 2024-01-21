@@ -1,6 +1,9 @@
-
-
+// Finding length of the buttons by using the queryselectorall function from javascript.
 var lengthOfButtons = document.querySelectorAll(".drum").length
+
+
+// Running a loop through the length for the buttons, So we can add event to the buttons by using event listner click functionality.
+// We create a variable ion which we will store the element value by using innerHTMl and by this we will find the value of element in drum class.
 
 for (var i = 0; i< lengthOfButtons; i++){
 
@@ -15,11 +18,16 @@ for (var i = 0; i< lengthOfButtons; i++){
 
 }
 
+// We use the keydown function to find the button pressed by the user keyboard.
+
 document.addEventListener("keydown", function(event) {
   makeSound(event.key);
   buttonAnimation(event.key);
 });
 
+
+
+// We create a function and use the switch loop and pass the key as a parameter. Now whenever we press a key or click a button the sound attached to it will play.
 
 function makeSound(key){
 
@@ -58,6 +66,9 @@ function makeSound(key){
       }
         
 }
+
+// We write a function buttonAnimation to add the animnation to the button whenever it is pressed or clicked, we use classlist function to add the pressed class to the activebutton.
+// We use the set timeout function to set the time for which that class applied to the button and then remove that class after that period of time 
 
 function buttonAnimation(e){
     var activeButton = document.querySelector("."+ e);

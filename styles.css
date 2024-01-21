@@ -16,6 +16,8 @@ footer {
   font-family: sans-serif;
 }
 
+/* attached images to the buttons by using background image*/
+
 .w {
   background-image: url('./images/tom1.png');
 }
@@ -52,6 +54,8 @@ footer {
   background-color: red;
   opacity: 0.8;
 }
+
+/* This is the class we added by using the javaScript */
 
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
